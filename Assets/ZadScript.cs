@@ -21,6 +21,6 @@ public class ZadScript : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         TextMeshProUGUI t = obj.GetComponent<TextMeshProUGUI>();
-        t.text = (Convert.ToInt32(t.text) + 1).ToString();
+        t.text = (Convert.ToInt32(t.text) - 1).ToString();
     }
 }
